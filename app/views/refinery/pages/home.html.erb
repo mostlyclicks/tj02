@@ -50,7 +50,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
+                            <!-- <li><a href="#services">Services</a></li> -->
                             <!-- <li><a href="#work">Work</a></li> -->
 
                             <!-- <li class="dropdown">
@@ -168,7 +168,7 @@
                         </div>
                     </div><!--section about 3 end-->
 
-                    <% end %>
+                    
                 </div>
             </div>
 
@@ -184,15 +184,17 @@
                     </div>
                 </div>
             </div>
+            <% end %>
             <!--page about content end here-->            
         </section>
+
         <!--about section end here-->
 
 
 
 
 
-
+        <% content_for :services do %>
 
         <!--section services start here-->
 
@@ -373,6 +375,7 @@
             </div><!--services section 1 end-->
             <% end %>
         </section>
+        <% end %>
         <!--section services end here-->
 
 
