@@ -6,17 +6,17 @@
   </head>
   <body id="<%= canonical_id @page %>" data-spy="scroll" data-target="#navigation" data-offset="80">
     <%= site_bar -%>
-    <!-- <div id="page_container"> -->
-<!--       <header id="header">
-        <%#= render "/refinery/header" -%>
-      </header> -->
+    <div id="page_container">
+    <header id="header">
+        <%= render "/refinery/header" -%>
+      </header>
       <!-- <section id="page"> -->
         <%= yield %>
       <!-- </section> -->
       <footer>
         <%= render "/refinery/footer" -%>
       </footer>
-    <!-- </div> -->
+   </div>
     <%= render "/refinery/javascripts" %>
   </body>
 </html>

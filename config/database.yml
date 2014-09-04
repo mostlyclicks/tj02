@@ -15,9 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: ec02_development
+  database: tj02_development
   pool: 5
-  username: ec02
+  username: tj02
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -41,15 +41,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: ec02_test
+  database: tj02_test
   pool: 5
-  username: ec02
+  username: tj02
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: ec02_production
+  database: tj02_production
   pool: 5
-  username: ec02
+  username: tj02
   password:

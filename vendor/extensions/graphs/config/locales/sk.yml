@@ -1,0 +1,30 @@
+sk:
+  refinery:
+    plugins:
+      graphs:
+        title: Graphs
+    graphs:
+      admin:
+        graphs:
+          actions:
+            create_new: Pridať Graph
+            reorder: Preusporiadať Graphs
+            reorder_done: Koniec radenia Graphs
+          records:
+            title: Graphs
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Graphs. Kliknite na "Pridať Graph" pre pridanie prvého graph.
+          graph:
+            view_live_html: Zobraziť náhľad graph<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť graph
+            delete: Zmazať graph
+      graphs:
+        show:
+          other: Daľšie Graphs
+  activerecord:
+    attributes:
+      'refinery/graphs/graph':
+        name: Name
+        excerpt: Excerpt
+        description: Description
+        code: Code

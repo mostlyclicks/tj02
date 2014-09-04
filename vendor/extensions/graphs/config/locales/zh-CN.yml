@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      graphs:
+        title: Graphs
+    graphs:
+      admin:
+        graphs:
+          actions:
+            create_new: 建立新的 Graph
+            reorder: 对 Graphs 重新排序
+            reorder_done: 对 Graphs 的重新排序结束
+          records:
+            title: Graphs
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Graphs yet. Click "Add New Graph" to add your first graph.
+            no_items_yet: 目前没有 Graphs . 点击 "Add New Graph" 创建一个graph.
+          graph:
+            view_live_html: 查看 graph 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 graph
+            delete: 永久删除 graph
+      graphs:
+        show:
+          other: 其他 Graphs
+  activerecord:
+    attributes:
+      'refinery/graphs/graph':
+        name: Name
+        excerpt: Excerpt
+        description: Description
+        code: Code

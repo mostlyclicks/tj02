@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      graphs:
+        title: Graphs
+    graphs:
+      admin:
+        graphs:
+          actions:
+            create_new: Nieuwe Graph toevoegen
+            reorder: De volgorde van de Graphs wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Graph-volgorde
+          records:
+            title: Graphs
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Graphs. Druk op 'Nieuwe Graph toevoegen' om de eerste toe te voegen.
+          graph:
+            view_live_html: Deze graph op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze graph
+            delete: Deze graph definitief verwijderen
+      graphs:
+        show:
+          other: Andere Graphs
+  activerecord:
+    attributes:
+      'refinery/graphs/graph':
+        name: Name
+        excerpt: Excerpt
+        description: Description
+        code: Code

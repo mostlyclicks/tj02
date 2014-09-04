@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      graphs:
+        title: Graphs
+#        article: masculino/femenino
+    graphs:
+      admin:
+        graphs:
+          actions:
+            create_new: Crear nuevo graph
+            reorder: Reordenar graphs
+            reorder_done: Reordenación de graphs completada
+          records:
+            title: Graphs
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay graphs todavía. Pulsa en "Crear nuevo Graph" para crear tu primer graph.
+          graph:
+            view_live_html: Ver este graph como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este graph
+            delete: Borrar este graph para siempre
+      graphs:
+        show:
+          other: Otros graphs
+  activerecord:
+    attributes:
+      'refinery/graphs/graph':
+        name: Name
+        excerpt: Excerpt
+        description: Description
+        code: Code

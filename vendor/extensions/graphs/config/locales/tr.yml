@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      graphs:
+        title: Graphs
+    graphs:
+      admin:
+        graphs:
+          actions:
+            create_new: Yeni Ekle Graph
+            reorder: Tekrar sirala Graphs
+            reorder_done: Tekrar siralama tamamlandiGraphs
+          records:
+            title: Graphs
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Graphs yok henuz.  Tikla "Yeni Ekle Graph" eklemek senin ilk graph.
+          graph:
+            view_live_html: Bunu canlu graph goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle graph
+            delete: Bunu Sil graph sonsuza dek
+      graphs:
+        show:
+          other: Diger Graphs
+  activerecord:
+    attributes:
+      'refinery/graphs/graph':
+        name: Name
+        excerpt: Excerpt
+        description: Description
+        code: Code

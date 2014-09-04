@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      graphs:
+        title: Graphs
+    graphs:
+      admin:
+        graphs:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Graph
+            reorder: Réordonner les Graphs
+            reorder_done: Fin de réordonnancement des Graphs
+          records:
+            title: Graphs
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Graph. Cliquer sur "Créer un(e) nouve(au/l/lle) Graph" pour créer votre premi(er/ère) graph.'
+          graph:
+            view_live_html: Voir ce(t/tte) graph <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) graph
+            delete: Supprimer définitivement ce(t/tte) graph
+      graphs:
+        show:
+          other: Autres Graphs
+  activerecord:
+    attributes:
+      'refinery/graphs/graph':
+        name: Name
+        excerpt: Excerpt
+        description: Description
+        code: Code

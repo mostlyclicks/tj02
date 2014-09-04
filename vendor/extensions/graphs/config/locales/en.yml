@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      graphs:
+        title: Graphs
+    graphs:
+      admin:
+        graphs:
+          actions:
+            create_new: Add New Graph
+            reorder: Reorder Graphs
+            reorder_done: Done Reordering Graphs
+          records:
+            title: Graphs
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Graphs yet. Click "Add New Graph" to add your first graph.
+          graph:
+            view_live_html: View this graph live <br/><em>(opens in a new window)</em>
+            edit: Edit this graph
+            delete: Remove this graph forever
+      graphs:
+        show:
+          other: Other Graphs
+  activerecord:
+    attributes:
+      'refinery/graphs/graph':
+        name: Name
+        excerpt: Excerpt
+        description: Description
+        code: Code

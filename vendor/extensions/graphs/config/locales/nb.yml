@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      graphs:
+        title: Graphs
+    graphs:
+      admin:
+        graphs:
+          actions:
+            create_new: Lag en ny Graph
+            reorder: Endre rekkefølgen på Graphs
+            reorder_done: Ferdig å endre rekkefølgen Graphs
+          records:
+            title: Graphs
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Graphs enda. Klikk på "Lag en ny Graph" for å legge til din første graph.
+          graph:
+            view_live_html: Vis hvordan denne graph ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne graph
+            delete: Fjern denne graph permanent
+      graphs:
+        show:
+          other: Andre Graphs
+  activerecord:
+    attributes:
+      'refinery/graphs/graph':
+        name: Name
+        excerpt: Excerpt
+        description: Description
+        code: Code
