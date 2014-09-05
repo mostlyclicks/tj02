@@ -1,5 +1,11 @@
 /* custom styles */
 
+body {
+  background-color:lighten(#ededed, 5%);
+}
+
+
+
 .main-flex-slider {
   h2 {
     color:#ffffff;
@@ -7,26 +13,48 @@
 }
 
 .jumbotron {
-  background-image:url('IMG_1917-home.jpg');
-  height:400px;
+  background-image:url('cardboard.jpg');
+  background-size:cover;
+
+  background-color:#fff;
+
+  height:350px;
   color:#fff;
-  box-shadow:inset 0px -30px 80px rgba(0,0,0,.7);
+  box-shadow:inset 0px -30px 80px rgba(0,0,0,.8);
   #text-area {
-    background-color:rgba(0,0,0,.5);
+    background-color:rgba(0,0,0,.7);
     padding:0 20px 20px 20px ;
   }
 }
 
 #home-content {
-  min-height:50vh;
+  min-height: 700px;
+  overflow: none;
+  background-color:#fff;
+  margin-top:none;
+}
+
+#main-content {
+  background-color:#fff;
 }
 
 .graph {
-  div {height:300px;}
+
+  div {
+    // height:300px !important;
+    margin-bottom:40px;
+    height:300px !important;
+
+
+  }
+  p {
+    font-size:10px;
+
+  }
 }
 
 footer {
-  background-color:lighten(#ededed, 5%);
+  
   border-top:8px solid lighten(#ededed, 4%);
   min-height:40px;
   padding:20px;

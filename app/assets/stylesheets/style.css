@@ -22,8 +22,8 @@ body {
 }
 /*typography bootstrap overrides*/
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Dosis', sans-serif;
-    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     line-height: 1;
 }
 h1{
@@ -197,8 +197,8 @@ color: #fff !important;
     text-transform: uppercase;
     color:#000;
     margin:0px;
-    font-size: 32px;
-    font-family: 'Dosis', sans-serif !important;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif !important;
 }
 .navbar-brand:hover{
     color:#000 !important;

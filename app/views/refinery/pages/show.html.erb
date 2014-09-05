@@ -1,1 +1,22 @@
-<%= render '/refinery/content_page' %>
+<%#= render '/refinery/content_page' %>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
+      <h1><%= @page.title %></h1>
+      <%= raw @page.content_for(:body) %>
+    </div>
+    <div class="col-lg-4">
+      <p>
+        <h3>Contact:</h3>
+        <p><strong>Taggert J. Brooks</strong><br />
+          <span class="fa fa-envelope"></span> Email@email.com<br />
+          <span class="fa fa-phone"></span> 555-555-5555
+
+        </p>
+
+      </p>
+
+
+    </div>
+  </div>
+</div>

@@ -1,27 +1,44 @@
 <div class="jumbotron">
     <div class="container">
   <div class="col-lg-8" id="text-area">
-  <h1>Hello, world!</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. </p>
+  <h1>Patterns</h1>
+  <p>Where people see repitition, we see iteration. The spikes and dips have their own kinetic energy. We analyze and predict where the ball may bounce.</p>
   <p><a class="btn btn-warning btn-lg" role="button">Learn more</a></p>
   </div>
 </div>
 </div>
 
 <div id="home-content">
-    <div class="container" style="border:1px solid red;">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-6" style="height:300px;">
+            <div class="col-lg-9" style="height:275px;margin-bottom:90px;">
                 <%#= raw @page.content_for(:graph_1) %>
                 <h1><%= @graphs.last.name %></h1>
                 <%= raw @graphs.last.excerpt %>
-                <%= raw @graphs.last.code %>
+                <%= link_to @graphs.last.id,  refinery.graphs_graph_path(@graphs.last.id) %>
+                <div><%= raw @graphs.last.code %></div>
+                <div class="row">
+                    <div class="col-lg-12">
+                    <h2>Featured Analysis</h2>
+                    <% @latest_graphs.each do |lg| %>
+                    <div class="col-lg-4" >
+                        <h5><%#= lg.name %></h5>
+                        <%#= raw lg.excerpt %>
+                    <%= raw lg.code %>
+                </div>
+
+                <% end %>
             </div>
-            <div class="col-lg-6">
-                <%= render '/refinery/content_page' %>
+                </div>
+            </div>
+
+            <div class="col-lg-3" style="padding-top:1em;">
+                <%= raw @page.content_for(:profile_image) %>
+                <%= raw @page.content_for(:body) %>
             </div>
             
         </div>
+
     </div>
 </div>
+
