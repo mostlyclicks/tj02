@@ -5,3 +5,29 @@
     color:#ffffff;
   }
 }
+
+.jumbotron {
+  background-image:url('IMG_1917-home.jpg');
+  height:400px;
+  color:#fff;
+  box-shadow:inset 0px -30px 80px rgba(0,0,0,.7);
+  #text-area {
+    background-color:rgba(0,0,0,.5);
+    padding:0 20px 20px 20px ;
+  }
+}
+
+#home-content {
+  min-height:50vh;
+}
+
+.graph {
+  div {height:300px;}
+}
+
+footer {
+  background-color:lighten(#ededed, 5%);
+  border-top:8px solid lighten(#ededed, 4%);
+  min-height:40px;
+  padding:20px;
+}

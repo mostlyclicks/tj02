@@ -1,14 +1,27 @@
 <div class="jumbotron">
     <div class="container">
+  <div class="col-lg-8" id="text-area">
   <h1>Hello, world!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. </p>
+  <p><a class="btn btn-warning btn-lg" role="button">Learn more</a></p>
   </div>
 </div>
+</div>
 
-
-<%= render '/refinery/content_page' %>
-
-
-
-
+<div id="home-content">
+    <div class="container" style="border:1px solid red;">
+        <div class="row">
+            <div class="col-lg-6" style="height:300px;">
+                <%#= raw @page.content_for(:graph_1) %>
+                <h1><%= @graphs.last.name %></h1>
+                <%= raw @graphs.last.excerpt %>
+                <%= raw @graphs.last.code %>
+            </div>
+            <div class="col-lg-6">
+                <%= render '/refinery/content_page' %>
+            </div>
+            
+        </div>
+    </div>
+</div>

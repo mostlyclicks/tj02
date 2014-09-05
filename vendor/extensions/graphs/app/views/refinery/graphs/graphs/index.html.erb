@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    
+    <% @graphs.each_with_index do |g, index| %>
+
+      <div class="col-lg-6 graph">
+      <h5><%= g.name %></h5>
+      <%= raw g.excerpt %>
+      <div><%= raw g.code %></div>
+      </div>
+    <% end %>
+  </div>
+</div>
