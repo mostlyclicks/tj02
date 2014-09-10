@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      surveys:
+        title: Surveys
+#        article: masculino/femenino
+    surveys:
+      admin:
+        surveys:
+          actions:
+            create_new: Crear nuevo survey
+            reorder: Reordenar surveys
+            reorder_done: Reordenación de surveys completada
+          records:
+            title: Surveys
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay surveys todavía. Pulsa en "Crear nuevo Survey" para crear tu primer survey.
+          survey:
+            view_live_html: Ver este survey como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este survey
+            delete: Borrar este survey para siempre
+      surveys:
+        show:
+          other: Otros surveys
+  activerecord:
+    attributes:
+      'refinery/surveys/survey':
+        name: Name
+        description: Description
+        survey_link: Survey Link
+        survey_end: Survey End

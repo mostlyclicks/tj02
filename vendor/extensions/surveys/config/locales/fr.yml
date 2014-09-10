@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      surveys:
+        title: Surveys
+    surveys:
+      admin:
+        surveys:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Survey
+            reorder: Réordonner les Surveys
+            reorder_done: Fin de réordonnancement des Surveys
+          records:
+            title: Surveys
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Survey. Cliquer sur "Créer un(e) nouve(au/l/lle) Survey" pour créer votre premi(er/ère) survey.'
+          survey:
+            view_live_html: Voir ce(t/tte) survey <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) survey
+            delete: Supprimer définitivement ce(t/tte) survey
+      surveys:
+        show:
+          other: Autres Surveys
+  activerecord:
+    attributes:
+      'refinery/surveys/survey':
+        name: Name
+        description: Description
+        survey_link: Survey Link
+        survey_end: Survey End

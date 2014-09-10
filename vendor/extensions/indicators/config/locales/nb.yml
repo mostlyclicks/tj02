@@ -1,0 +1,36 @@
+nb:
+  refinery:
+    plugins:
+      indicators:
+        title: Indicators
+    indicators:
+      admin:
+        indicators:
+          actions:
+            create_new: Lag en ny Indicator
+            reorder: Endre rekkefølgen på Indicators
+            reorder_done: Ferdig å endre rekkefølgen Indicators
+          records:
+            title: Indicators
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Indicators enda. Klikk på "Lag en ny Indicator" for å legge til din første indicator.
+          indicator:
+            view_live_html: Vis hvordan denne indicator ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne indicator
+            delete: Fjern denne indicator permanent
+      indicators:
+        show:
+          other: Andre Indicators
+  activerecord:
+    attributes:
+      'refinery/indicators/indicator':
+        name: Name
+        subject: Subject
+        source: Source
+        iframe_url: Iframe Url
+        csv_url: Csv Url
+        description: Description
+        city_tags: City Tags
+        zip_tags: Zip Tags
+        state_tags: State Tags
+        meta_tags: Meta Tags

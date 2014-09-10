@@ -1,0 +1,36 @@
+sk:
+  refinery:
+    plugins:
+      indicators:
+        title: Indicators
+    indicators:
+      admin:
+        indicators:
+          actions:
+            create_new: Pridať Indicator
+            reorder: Preusporiadať Indicators
+            reorder_done: Koniec radenia Indicators
+          records:
+            title: Indicators
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Indicators. Kliknite na "Pridať Indicator" pre pridanie prvého indicator.
+          indicator:
+            view_live_html: Zobraziť náhľad indicator<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť indicator
+            delete: Zmazať indicator
+      indicators:
+        show:
+          other: Daľšie Indicators
+  activerecord:
+    attributes:
+      'refinery/indicators/indicator':
+        name: Name
+        subject: Subject
+        source: Source
+        iframe_url: Iframe Url
+        csv_url: Csv Url
+        description: Description
+        city_tags: City Tags
+        zip_tags: Zip Tags
+        state_tags: State Tags
+        meta_tags: Meta Tags

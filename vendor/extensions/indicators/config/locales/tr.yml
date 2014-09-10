@@ -1,0 +1,36 @@
+tr:
+  refinery:
+    plugins:
+      indicators:
+        title: Indicators
+    indicators:
+      admin:
+        indicators:
+          actions:
+            create_new: Yeni Ekle Indicator
+            reorder: Tekrar sirala Indicators
+            reorder_done: Tekrar siralama tamamlandiIndicators
+          records:
+            title: Indicators
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Indicators yok henuz.  Tikla "Yeni Ekle Indicator" eklemek senin ilk indicator.
+          indicator:
+            view_live_html: Bunu canlu indicator goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle indicator
+            delete: Bunu Sil indicator sonsuza dek
+      indicators:
+        show:
+          other: Diger Indicators
+  activerecord:
+    attributes:
+      'refinery/indicators/indicator':
+        name: Name
+        subject: Subject
+        source: Source
+        iframe_url: Iframe Url
+        csv_url: Csv Url
+        description: Description
+        city_tags: City Tags
+        zip_tags: Zip Tags
+        state_tags: State Tags
+        meta_tags: Meta Tags

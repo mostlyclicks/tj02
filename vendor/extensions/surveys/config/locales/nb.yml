@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      surveys:
+        title: Surveys
+    surveys:
+      admin:
+        surveys:
+          actions:
+            create_new: Lag en ny Survey
+            reorder: Endre rekkefølgen på Surveys
+            reorder_done: Ferdig å endre rekkefølgen Surveys
+          records:
+            title: Surveys
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Surveys enda. Klikk på "Lag en ny Survey" for å legge til din første survey.
+          survey:
+            view_live_html: Vis hvordan denne survey ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne survey
+            delete: Fjern denne survey permanent
+      surveys:
+        show:
+          other: Andre Surveys
+  activerecord:
+    attributes:
+      'refinery/surveys/survey':
+        name: Name
+        description: Description
+        survey_link: Survey Link
+        survey_end: Survey End

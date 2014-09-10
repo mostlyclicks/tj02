@@ -1,0 +1,38 @@
+zh-CN:
+  refinery:
+    plugins:
+      indicators:
+        title: Indicators
+    indicators:
+      admin:
+        indicators:
+          actions:
+            create_new: 建立新的 Indicator
+            reorder: 对 Indicators 重新排序
+            reorder_done: 对 Indicators 的重新排序结束
+          records:
+            title: Indicators
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Indicators yet. Click "Add New Indicator" to add your first indicator.
+            no_items_yet: 目前没有 Indicators . 点击 "Add New Indicator" 创建一个indicator.
+          indicator:
+            view_live_html: 查看 indicator 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 indicator
+            delete: 永久删除 indicator
+      indicators:
+        show:
+          other: 其他 Indicators
+  activerecord:
+    attributes:
+      'refinery/indicators/indicator':
+        name: Name
+        subject: Subject
+        source: Source
+        iframe_url: Iframe Url
+        csv_url: Csv Url
+        description: Description
+        city_tags: City Tags
+        zip_tags: Zip Tags
+        state_tags: State Tags
+        meta_tags: Meta Tags

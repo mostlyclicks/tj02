@@ -1,0 +1,36 @@
+nl:
+  refinery:
+    plugins:
+      indicators:
+        title: Indicators
+    indicators:
+      admin:
+        indicators:
+          actions:
+            create_new: Nieuwe Indicator toevoegen
+            reorder: De volgorde van de Indicators wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Indicator-volgorde
+          records:
+            title: Indicators
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Indicators. Druk op 'Nieuwe Indicator toevoegen' om de eerste toe te voegen.
+          indicator:
+            view_live_html: Deze indicator op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze indicator
+            delete: Deze indicator definitief verwijderen
+      indicators:
+        show:
+          other: Andere Indicators
+  activerecord:
+    attributes:
+      'refinery/indicators/indicator':
+        name: Name
+        subject: Subject
+        source: Source
+        iframe_url: Iframe Url
+        csv_url: Csv Url
+        description: Description
+        city_tags: City Tags
+        zip_tags: Zip Tags
+        state_tags: State Tags
+        meta_tags: Meta Tags

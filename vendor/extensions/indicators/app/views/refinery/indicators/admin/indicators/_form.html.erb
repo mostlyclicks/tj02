@@ -1,0 +1,70 @@
+<%= form_for [refinery, :indicators_admin, @indicator] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @indicator,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :subject -%>
+    <%= f.text_field :subject -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :source -%>
+    <%= f.text_field :source -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :iframe_url -%>
+    <%= f.text_field :iframe_url -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :csv_url -%>
+    <%= f.text_field :csv_url -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "indicators/indicator" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :city_tags -%>
+    <%= f.text_field :city_tags -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :zip_tags -%>
+    <%= f.text_field :zip_tags -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :state_tags -%>
+    <%= f.text_field :state_tags -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :meta_tags -%>
+    <%= f.text_field :meta_tags -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.indicators.admin.indicators.indicator'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @indicator.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

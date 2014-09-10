@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="indicators">
+    <% @indicators.each do |indicator| %>
+      <li>
+        <%= link_to indicator.name, refinery.indicators_indicator_path(indicator) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

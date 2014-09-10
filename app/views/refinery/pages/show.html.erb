@@ -1,9 +1,16 @@
 <%#= render '/refinery/content_page' %>
+<div id="main-content">
 <div class="container">
   <div class="row">
-    <div class="col-lg-8">
+    <div class="col-lg-4">
       <h1><%= @page.title %></h1>
       <%= raw @page.content_for(:body) %>
+
+      <iframe src="http://taggertbrooks.com/WEB/CIVPART.html" frameborder="0" height="250">
+      </iframe>
+      <p></p>
+
+
     </div>
     <div class="col-lg-4">
       <p>
@@ -19,4 +26,5 @@
 
     </div>
   </div>
+</div>
 </div>

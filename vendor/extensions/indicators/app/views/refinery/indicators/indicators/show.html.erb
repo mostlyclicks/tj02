@@ -1,0 +1,81 @@
+<% content_for :body_content_title do %>
+  <%= @indicator.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @indicator.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Subject</h1>
+    <p>
+      <%=raw @indicator.subject %>
+    </p>
+  </section>
+  <section>
+    <h1>Source</h1>
+    <p>
+      <%=raw @indicator.source %>
+    </p>
+  </section>
+  <section>
+    <h1>Iframe Url</h1>
+    <p>
+      <%=raw @indicator.iframe_url %>
+    </p>
+  </section>
+  <section>
+    <h1>Csv Url</h1>
+    <p>
+      <%=raw @indicator.csv_url %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @indicator.description %>
+    </p>
+  </section>
+  <section>
+    <h1>City Tags</h1>
+    <p>
+      <%=raw @indicator.city_tags %>
+    </p>
+  </section>
+  <section>
+    <h1>Zip Tags</h1>
+    <p>
+      <%=raw @indicator.zip_tags %>
+    </p>
+  </section>
+  <section>
+    <h1>State Tags</h1>
+    <p>
+      <%=raw @indicator.state_tags %>
+    </p>
+  </section>
+  <section>
+    <h1>Meta Tags</h1>
+    <p>
+      <%=raw @indicator.meta_tags %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="indicators">
+      <% @indicators.each do |indicator| %>
+        <li>
+          <%= link_to indicator.name, refinery.indicators_indicator_path(indicator) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,36 @@
+it:
+  refinery:
+    plugins:
+      indicators:
+        title: Indicators
+    indicators:
+      admin:
+        indicators:
+          actions:
+            create_new: Aggiungi Nuovo Indicator
+            reorder: Riordina Indicators
+            reorder_done: Termina il Riordino di Indicators
+          records:
+            title: Indicators
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Indicators. Clicca "Aggiungi Nuovo Indicator" per aggiungere il tuo primo indicator.
+          indicator:
+            view_live_html: Guarda live questo indicator <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo indicator
+            delete: Rimuovi per sempre questo indicator
+      indicators:
+        show:
+          other: Altri Indicators
+  activerecord:
+    attributes:
+      'refinery/indicators/indicator':
+        name: Name
+        subject: Subject
+        source: Source
+        iframe_url: Iframe Url
+        csv_url: Csv Url
+        description: Description
+        city_tags: City Tags
+        zip_tags: Zip Tags
+        state_tags: State Tags
+        meta_tags: Meta Tags

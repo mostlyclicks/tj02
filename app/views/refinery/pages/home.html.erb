@@ -15,7 +15,7 @@
                 <%#= raw @page.content_for(:graph_1) %>
                 <h1><%= @graphs.last.name %></h1>
                 <%= raw @graphs.last.excerpt %>
-                <%= link_to @graphs.last.id,  refinery.graphs_graph_path(@graphs.last.id) %>
+                <%= link_to 'Learn more',  refinery.graphs_graph_path(@graphs.last.id), class: 'btn btn-primary', style: "float:right;margin-right:20px;" %>
                 <div><%= raw @graphs.last.code %></div>
                 <div class="row">
                     <div class="col-lg-12">
@@ -24,7 +24,9 @@
                     <div class="col-lg-4" >
                         <h5><%#= lg.name %></h5>
                         <%#= raw lg.excerpt %>
+
                     <%= raw lg.code %>
+                    <%= link_to 'See graph', refinery.graphs_graph_path(lg.id), class: 'btn btn-xs btn-info', style: "display:block;margin:0 auto;" %>
                 </div>
 
                 <% end %>

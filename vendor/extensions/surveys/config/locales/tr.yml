@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      surveys:
+        title: Surveys
+    surveys:
+      admin:
+        surveys:
+          actions:
+            create_new: Yeni Ekle Survey
+            reorder: Tekrar sirala Surveys
+            reorder_done: Tekrar siralama tamamlandiSurveys
+          records:
+            title: Surveys
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Surveys yok henuz.  Tikla "Yeni Ekle Survey" eklemek senin ilk survey.
+          survey:
+            view_live_html: Bunu canlu survey goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle survey
+            delete: Bunu Sil survey sonsuza dek
+      surveys:
+        show:
+          other: Diger Surveys
+  activerecord:
+    attributes:
+      'refinery/surveys/survey':
+        name: Name
+        description: Description
+        survey_link: Survey Link
+        survey_end: Survey End

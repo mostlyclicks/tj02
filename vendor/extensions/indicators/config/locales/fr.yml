@@ -1,0 +1,36 @@
+fr:
+  refinery:
+    plugins:
+      indicators:
+        title: Indicators
+    indicators:
+      admin:
+        indicators:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Indicator
+            reorder: Réordonner les Indicators
+            reorder_done: Fin de réordonnancement des Indicators
+          records:
+            title: Indicators
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Indicator. Cliquer sur "Créer un(e) nouve(au/l/lle) Indicator" pour créer votre premi(er/ère) indicator.'
+          indicator:
+            view_live_html: Voir ce(t/tte) indicator <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) indicator
+            delete: Supprimer définitivement ce(t/tte) indicator
+      indicators:
+        show:
+          other: Autres Indicators
+  activerecord:
+    attributes:
+      'refinery/indicators/indicator':
+        name: Name
+        subject: Subject
+        source: Source
+        iframe_url: Iframe Url
+        csv_url: Csv Url
+        description: Description
+        city_tags: City Tags
+        zip_tags: Zip Tags
+        state_tags: State Tags
+        meta_tags: Meta Tags

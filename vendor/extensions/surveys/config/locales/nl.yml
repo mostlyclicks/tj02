@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      surveys:
+        title: Surveys
+    surveys:
+      admin:
+        surveys:
+          actions:
+            create_new: Nieuwe Survey toevoegen
+            reorder: De volgorde van de Surveys wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Survey-volgorde
+          records:
+            title: Surveys
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Surveys. Druk op 'Nieuwe Survey toevoegen' om de eerste toe te voegen.
+          survey:
+            view_live_html: Deze survey op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze survey
+            delete: Deze survey definitief verwijderen
+      surveys:
+        show:
+          other: Andere Surveys
+  activerecord:
+    attributes:
+      'refinery/surveys/survey':
+        name: Name
+        description: Description
+        survey_link: Survey Link
+        survey_end: Survey End

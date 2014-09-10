@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      surveys:
+        title: Surveys
+    surveys:
+      admin:
+        surveys:
+          actions:
+            create_new: Add New Survey
+            reorder: Reorder Surveys
+            reorder_done: Done Reordering Surveys
+          records:
+            title: Surveys
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Surveys yet. Click "Add New Survey" to add your first survey.
+          survey:
+            view_live_html: View this survey live <br/><em>(opens in a new window)</em>
+            edit: Edit this survey
+            delete: Remove this survey forever
+      surveys:
+        show:
+          other: Other Surveys
+  activerecord:
+    attributes:
+      'refinery/surveys/survey':
+        name: Name
+        description: Description
+        survey_link: Survey Link
+        survey_end: Survey End

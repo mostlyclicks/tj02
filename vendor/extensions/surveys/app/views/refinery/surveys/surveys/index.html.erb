@@ -1,0 +1,24 @@
+
+  <div class="col-lg-"></div>
+
+
+
+<div id="main-content">
+<div class="container">
+<div class="row">
+<% content_for :body do %>
+  <ul id="surveys">
+    <% @surveys.each do |survey| %>
+      <li>
+        <%= link_to survey.name, refinery.surveys_survey_path(survey) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>
+</div>
+
+
+</div>
+</div>

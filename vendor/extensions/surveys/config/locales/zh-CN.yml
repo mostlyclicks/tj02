@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      surveys:
+        title: Surveys
+    surveys:
+      admin:
+        surveys:
+          actions:
+            create_new: 建立新的 Survey
+            reorder: 对 Surveys 重新排序
+            reorder_done: 对 Surveys 的重新排序结束
+          records:
+            title: Surveys
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Surveys yet. Click "Add New Survey" to add your first survey.
+            no_items_yet: 目前没有 Surveys . 点击 "Add New Survey" 创建一个survey.
+          survey:
+            view_live_html: 查看 survey 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 survey
+            delete: 永久删除 survey
+      surveys:
+        show:
+          other: 其他 Surveys
+  activerecord:
+    attributes:
+      'refinery/surveys/survey':
+        name: Name
+        description: Description
+        survey_link: Survey Link
+        survey_end: Survey End

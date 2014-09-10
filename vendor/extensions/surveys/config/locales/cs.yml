@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      surveys:
+        title: Surveys
+    surveys:
+      admin:
+        surveys:
+          actions:
+            create_new: Přidat Survey
+            reorder: Řadit Surveys
+            reorder_done: Konec řazení Surveys
+          records:
+            title: Surveys
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Surveys. Zvolte "Přidat Survey" pro přidání prvního survey.
+          survey:
+            view_live_html: Zobrazit náhled survey<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit survey
+            delete: Smazat survey
+      surveys:
+        show:
+          other: Další Surveys
+  activerecord:
+    attributes:
+      'refinery/surveys/survey':
+        name: Name
+        description: Description
+        survey_link: Survey Link
+        survey_end: Survey End

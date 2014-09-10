@@ -1,0 +1,40 @@
+<%= form_for [refinery, :surveys_admin, @survey] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @survey,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "surveys/survey" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :survey_link -%>
+    <%= f.text_field :survey_link -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :survey_end -%>
+    <%= f.datetime_select :survey_end -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.surveys.admin.surveys.survey'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @survey.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

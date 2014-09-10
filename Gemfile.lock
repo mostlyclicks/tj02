@@ -3,6 +3,8 @@ PATH
   specs:
     refinerycms-graphs (1.0)
       refinerycms-core (~> 2.1.1)
+    refinerycms-indicators (1.0)
+      refinerycms-core (~> 2.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -220,5 +222,6 @@ DEPENDENCIES
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-graphs!
+  refinerycms-indicators!
   sass-rails (~> 3.2.3)
   uglifier (>= 1.0.3)

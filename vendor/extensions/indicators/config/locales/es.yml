@@ -1,0 +1,37 @@
+es:
+  refinery:
+    plugins:
+      indicators:
+        title: Indicators
+#        article: masculino/femenino
+    indicators:
+      admin:
+        indicators:
+          actions:
+            create_new: Crear nuevo indicator
+            reorder: Reordenar indicators
+            reorder_done: Reordenación de indicators completada
+          records:
+            title: Indicators
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay indicators todavía. Pulsa en "Crear nuevo Indicator" para crear tu primer indicator.
+          indicator:
+            view_live_html: Ver este indicator como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este indicator
+            delete: Borrar este indicator para siempre
+      indicators:
+        show:
+          other: Otros indicators
+  activerecord:
+    attributes:
+      'refinery/indicators/indicator':
+        name: Name
+        subject: Subject
+        source: Source
+        iframe_url: Iframe Url
+        csv_url: Csv Url
+        description: Description
+        city_tags: City Tags
+        zip_tags: Zip Tags
+        state_tags: State Tags
+        meta_tags: Meta Tags
