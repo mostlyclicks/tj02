@@ -1,3 +1,27 @@
+<div id="main-content">
+<div class="container">
+  <div class="row" style="margin-top:20px;">
+    <div class="col-lg-5">
+      <h1><%= @indicator.name %></h1>
+      <small>last updated: <%= @indicator.updated_at.strftime("%B %d, %Y") %></small>
+      <% if @indicator.description.blank? %>
+        <p>Description coming soon ...</p>
+      <% else %>
+        <%= raw @indicator.description %>
+      <% end %>
+    </div>
+    <div class="col-lg-7" style="height:500px;margin-top:30px;">
+      <iframe src="<%= raw @indicator.iframe_url %>" frameborder="0" height="500" style="background-color:#efefef;"></iframe>
+      <small><span class="fa fa-file-o"></span> <%= link_to 'Download CSV', @indicator.csv_url %></small>
+   </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
 <% content_for :body_content_title do %>
   <%= @indicator.name %>
 <% end %>
@@ -78,4 +102,4 @@
   </aside>
 <% end %>
 
-<%= render '/refinery/content_page' %>
+<%#= render '/refinery/content_page' %>

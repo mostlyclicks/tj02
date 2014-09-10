@@ -58,6 +58,20 @@ body {
   }
 }
 
+.indicators {
+  margin-bottom:20px;
+}
+
+.indicator-index {
+  background-color:#fff;
+  border-top:1px solid #dddddd;
+  margin-top:-1px;
+}
+
+.tab-content {
+  padding:30px 0px;
+}
+
 footer {
   
   border-top:8px solid lighten(#ededed, 4%);

@@ -11,36 +11,87 @@
 <div id="home-content">
     <div class="container">
         <div class="row">
+            <div class="col-lg-12">
+            <h1>Welcome to the 7 Rivers Region Economic Indicators Site</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+</div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-lg-10" style="">
+                <h3 class="pull-left">Selected economic indicators</h3>
+            </div>
+            <div class="col-lg-2">
+            <%= link_to 'SEE ALL', refinery.indicators_indicators_path, class: 'pull-right btn btn-primary btn-xs btn-block', style: 'margin-top:20px;'%> 
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+
+            <% @home_indicators.each do |hi| %>
+
+
+            <div class="col-lg-4" style="margin-bottom:20px;">
+                <iframe src="<%= raw hi.iframe_url %>" frameborder="0" height="250" style="background-color:#efefef;"></iframe>
+                <small><%= link_to 'View large graph', refinery.indicators_indicator_path(hi) %> | <%= link_to 'Download CSV', hi.csv_url %></small>
+
+            </div>
+
+            <% end %>
+        </div></div>
+
+</div>
+
+
+<!-- 
+<div id="home-content">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-9" style="height:275px;margin-bottom:90px;">
                 <%#= raw @page.content_for(:graph_1) %>
-                <h1><%= @graphs.last.name %></h1>
-                <%= raw @graphs.last.excerpt %>
-                <%= link_to 'Learn more',  refinery.graphs_graph_path(@graphs.last.id), class: 'btn btn-primary', style: "float:right;margin-right:20px;" %>
-                <div><%= raw @graphs.last.code %></div>
+                <h1><%#= @graphs.last.name %></h1>
+                <%#= raw @graphs.last.excerpt %>
+                <%#= link_to 'Learn more',  refinery.graphs_graph_path(@graphs.last.id), class: 'btn btn-primary', style: "float:right;margin-right:20px;" %>
+                <div><%#= raw @graphs.last.code %></div>
                 <div class="row">
                     <div class="col-lg-12">
                     <h2>Featured Analysis</h2>
-                    <% @latest_graphs.each do |lg| %>
+                    <%# @latest_graphs.each do |lg| %>
                     <div class="col-lg-4" >
-                        <h5><%#= lg.name %></h5>
-                        <%#= raw lg.excerpt %>
+                        <h5><%##= lg.name %></h5>
+                        <%##= raw lg.excerpt %>
 
-                    <%= raw lg.code %>
-                    <%= link_to 'See graph', refinery.graphs_graph_path(lg.id), class: 'btn btn-xs btn-info', style: "display:block;margin:0 auto;" %>
+                    <%#= raw lg.code %>
+                    <%#= link_to 'See graph', refinery.graphs_graph_path(lg.id), class: 'btn btn-xs btn-info', style: "display:block;margin:0 auto;" %>
                 </div>
 
-                <% end %>
+                <%# end %>
             </div>
                 </div>
             </div>
 
             <div class="col-lg-3" style="padding-top:1em;">
-                <%= raw @page.content_for(:profile_image) %>
-                <%= raw @page.content_for(:body) %>
+                <%#= raw @page.content_for(:profile_image) %>
+                <%#= raw @page.content_for(:body) %>
             </div>
             
         </div>
 
     </div>
 </div>
+
+-->
+
+
 
